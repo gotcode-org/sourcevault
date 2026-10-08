@@ -6,11 +6,12 @@ Format: [state] (Priority) [domain/binary] Task description @assignee +tag
 | (A), (B), (C)  | Task Priority (A = High, B = Medium, C = Low). Optional.   |
 | [sourcevaultd] | Target binary (sourcevaultd, sourcevault).                 |
 | [registry]     | Target domain (registry, identity, repo, crypto, etc).     |
-| @name          | Context / Assignee (e.g., @jovens@gotcode.org, @ai).       |
+| @name          | Context / Assignee (e.g., @jovens@gotcode.org).              |
 | +tag           | Project or state tag (e.g., +blocked, +security).          |
 ===============================================================================
 
 [x] (A) 2026-10-07 [docs] Build out project documentation @jovens@gotcode.org +task:20261007.001
 [x] (A) 2026-10-07 [core] Init the Go project using vanity URL gotcode.org/sourcevault @jovens@gotcode.org +task:20261007.002
-[x] (B) 2026-10-07 [core] Refactor ldflags version injection to internal/system @ai +task:20261007.003
-[x] (A) 2026-10-07 [core] Remove committed binaries and add gitignore @ai +task:20261007.004
+[x] (B) 2026-10-07 [core] Refactor ldflags version injection to internal/system @jovens@gotcode.org +task:20261007.003
+[x] (A) 2026-10-07 [core] Remove committed binaries and add gitignore @jovens@gotcode.org +task:20261007.004
+[x] (C) 2026-10-07 [docs] Enforce human assignee policy in TODO @jovens@gotcode.org +task:20261007.005

@@ -1,0 +1,13 @@
+Format: [state] (Priority) [domain/binary] Task description @assignee +tag
+
+| Element        | Description                                                |
+|----------------|------------------------------------------------------------|
+| [ ], [-], [x]  | Task State: [ ] = Open, [-] = In-Progress, [x] = Completed.|
+| (A), (B), (C)  | Task Priority (A = High, B = Medium, C = Low). Optional.   |
+| [sourcevaultd] | Target binary (sourcevaultd, sourcevault).                 |
+| [registry]     | Target domain (registry, identity, repo, crypto, etc).     |
+| @name          | Context / Assignee (e.g., @jovens@gotcode.org, @ai).       |
+| +tag           | Project or state tag (e.g., +blocked, +security).          |
+===============================================================================
+
+[x] (A) 2026-10-07 [docs] Build out project documentation @jovens@gotcode.org +task:20261007.001

@@ -12,3 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `AGENTS.md` to define architectural boundaries and AI agent workflows.
 - `SECURITY.md` and `CONTRIBUTING.md` policies.
 - Standard `LICENSE`, `DCO`, and `MAINTAINERS` files.
+- Go module initialization (`gotcode.org/sourcevault`).
+- `Makefile` with `tidy`, `fmt`, `vet`, `lint`, `sec`, `test`, and `build` targets.
+- Cobra CLI scaffolding for `sourcevault` and `sourcevaultd` with custom lipgloss UI styling.
+- Hexagonal CQRS architecture implementation for the `version` command and system information retrieval.

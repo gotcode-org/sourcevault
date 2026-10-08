@@ -19,3 +19,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Refactored `Makefile` `-ldflags` injection to target `internal/system` variables instead of CLI `main` variables, fully decoupling version state from the Cobra entrypoints.
+
+### Fixed
+- Removed accidentally committed binary files (`bin/sourcevault`, `bin/sourcevaultd`) from the Git index and added a `.gitignore` to prevent future tracking.

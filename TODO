@@ -11,3 +11,4 @@ Format: [state] (Priority) [domain/binary] Task description @assignee +tag
 ===============================================================================
 
 [x] (A) 2026-10-07 [docs] Build out project documentation @jovens@gotcode.org +task:20261007.001
+[x] (A) 2026-10-07 [core] Init the Go project using vanity URL gotcode.org/sourcevault @jovens@gotcode.org +task:20261007.002

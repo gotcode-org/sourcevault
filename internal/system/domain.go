@@ -13,3 +13,10 @@ type VersionInfo struct {
 	OSArch    string
 	Deps      []Dependency
 }
+
+var (
+	// Injected by Makefile -ldflags
+	AppVersion = "v0.0.0-dev"
+	Commit     = "unknown"
+	Branch     = "unknown"
+)

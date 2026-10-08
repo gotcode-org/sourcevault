@@ -4,7 +4,7 @@ VERSION := $(shell git describe --tags --always --dirty 2>/dev/null || echo "v0.
 COMMIT := $(shell git rev-parse HEAD 2>/dev/null || echo "unknown")
 BRANCH := $(shell git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "unknown")
 
-LDFLAGS := -ldflags "-X main.Version=$(VERSION) -X main.Commit=$(COMMIT) -X main.Branch=$(BRANCH)"
+LDFLAGS := -ldflags "-X gotcode.org/sourcevault/internal/system.AppVersion=$(VERSION) -X gotcode.org/sourcevault/internal/system.Commit=$(COMMIT) -X gotcode.org/sourcevault/internal/system.Branch=$(BRANCH)"
 
 all: check build
 

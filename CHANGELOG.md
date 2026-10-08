@@ -16,3 +16,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `Makefile` with `tidy`, `fmt`, `vet`, `lint`, `sec`, `test`, and `build` targets.
 - Cobra CLI scaffolding for `sourcevault` and `sourcevaultd` with custom lipgloss UI styling.
 - Hexagonal CQRS architecture implementation for the `version` command and system information retrieval.
+
+### Changed
+- Refactored `Makefile` `-ldflags` injection to target `internal/system` variables instead of CLI `main` variables, fully decoupling version state from the Cobra entrypoints.

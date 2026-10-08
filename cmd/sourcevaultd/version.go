@@ -16,11 +16,7 @@ func versionCmd() *cobra.Command {
 			runtimeAdapter := system.NewGoRuntimeAdapter()
 			queryHandler := system.NewGetVersionQueryHandler(runtimeAdapter)
 
-			query := system.GetVersionQuery{
-				AppVersion: Version,
-				Commit:     Commit,
-				Branch:     Branch,
-			}
+			query := system.GetVersionQuery{}
 
 			info, err := queryHandler.Handle(cmd.Context(), query)
 			if err != nil {

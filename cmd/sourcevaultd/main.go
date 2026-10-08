@@ -9,13 +9,6 @@ import (
 	"gotcode.org/sourcevault/internal/ui"
 )
 
-var (
-	// Injected by Makefile -ldflags
-	Version = "v0.0.0-dev"
-	Commit  = "unknown"
-	Branch  = "unknown"
-)
-
 func main() {
 	rootCmd := &cobra.Command{
 		Use:           "sourcevaultd",
